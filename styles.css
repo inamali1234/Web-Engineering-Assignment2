@@ -1,0 +1,514 @@
+/* styles.css */
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body{
+  background-color: #f39c12;
+}
+
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  padding: 40px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.welcome-note {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.welcome-note.fade-out {
+  opacity: 0;
+}
+
+.navbar-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align-last: center;
+}
+
+.navbar-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.navbar-links li p {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  background-color: #f39c12;
+  margin-right: 600px;
+  margin-left: 0px;
+}
+.navbar-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.navbar-links li a:hover {
+  color: #f39c12; /* Change color on hover */
+}
+
+.btn-download-cv {
+  background-color: #f39c12;
+  color: #ffff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download-cv:hover {
+  background-color: #e67e22; /* Darker shade on hover */
+}
+
+
+/* Hero section */
+.hero {
+  background-color: #f9f9f9; /* Light background color */
+  padding: 185px 0;
+  text-align: center;
+}
+
+.hero .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.profile-pic {
+  width: 250px; /* Adjust size as needed */
+  height: 250px; /* Adjust size as needed */
+  border-radius: 50%; /* Make it circular */
+  overflow: hidden;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0%;
+  border: 1px solid #7c4e4e; /* White border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  margin-top: 20px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #000000; /* Dark text color */
+}
+
+.hero-text p {
+  font-size: 25px;
+  color: #000000; /* Medium gray text color */
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.hero .btn {
+  display: inline-block;
+  background-color: #f39c12; /* Orange button color */
+  color: #fff; /* White button text color */
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #e67e22; /* Darker shade on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 28px; /* Adjust heading size for smaller screens */
+  }
+  
+  .hero-text p {
+    font-size: 16px; /* Adjust paragraph size for smaller screens */
+  }
+  
+  .hero .btn {
+    padding: 10px 20px; /* Adjust button padding for smaller screens */
+  }
+}
+
+/* Portfolio section */
+.portfolio-section {
+  padding: 30px 0;
+  background-color: #fff; /* Set background color */
+}
+
+.portfolio-section .container {
+  text-align: center;
+}
+
+.portfolio-section .section-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.portfolio-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  width: calc(45% - 30px);
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px); /* Lift on hover */
+}
+
+.item-details {
+  background-color: #f39c12;
+  padding: 20px;
+}
+
+.item-details h3 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #000000;
+}
+
+.item-details p {
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.item-details .btn {
+  background-color: #ac6f0e;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.item-details .btn:hover {
+  background-color: #e67e22; /* Darker shade on hover */
+}
+
+
+/* Services Section */
+.services-section {
+  padding: 30px 0;
+  background-color: #f39c12; /* Set background color */
+  text-align: center;
+}
+
+.services-section .container {
+  text-align: center;
+}
+
+.services-section .section-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.services-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  width: calc(33% - 20px);
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-10px); /* Lift on hover */
+}
+
+.service-item h3 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.service-item p {
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section {
+  padding: 80px 0;
+  background-color: #fff; /* Set background color */
+  text-align: center;
+}
+
+.contact-section .container {
+  text-align: center;
+}
+
+.contact-section .section-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contact-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  width: calc(50% - 30px);
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease;
+}
+
+.contact-item h3 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.social-links li a:hover {
+  color: #f39c12;
+}
+
+.contact-info {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: block;
+    text-align: center;
+  }
+  .navbar-links li {
+    display: block;
+    margin: 10px 0;
+  }
+  .hero h1 {
+    font-size: 36px; /* Adjust heading size for smaller screens */
+  }
+  .hero p {
+    font-size: 16px; /* Adjust paragraph size for smaller screens */
+  }
+  .hero .btn {
+    font-size: 14px; /* Adjust button size for smaller screens */
+  }
+  .portfolio-item {
+    width: 100%; /* Full width for portfolio items on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 20px 0;
+  }
+
+  .navbar-links li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .navbar-links li p,
+  .navbar-links li a {
+    font-size: 16px;
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 100px 20px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .hero .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .portfolio-item,
+  .service-item,
+  .contact-item {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    padding: 30px 0;
+  }
+
+  .navbar-links {
+    text-align: center;
+  }
+
+  .navbar-links li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  .navbar-links li p,
+  .navbar-links li a {
+    font-size: 18px;
+    margin: 0 5px;
+  }
+
+  .hero {
+    padding: 120px 20px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .hero .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .portfolio-item,
+  .service-item,
+  .contact-item {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+}
